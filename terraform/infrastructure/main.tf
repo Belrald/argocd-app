@@ -55,7 +55,7 @@ resource "kubernetes_manifest" "argo-github" {
       }
       project = "default"
       source = {
-        repoURL        = "https://github.com/Belrald/infrastructure-config.git"
+        repoURL        = "https://github.com/Belrald/argocd-app.git"
         targetRevision = "HEAD"
         path           = "deployment"
       }
