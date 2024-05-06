@@ -3,12 +3,14 @@ variable "region" {
   default = "us-west-2"
 }
 
+# variable will be provided through a secured mean (e.g terraform cloud)
 variable "access_key" {
   type    = string
   default = ""
 
 }
 
+# variable will be provided through a secured mean (e.g terraform cloud)
 variable "secret_key" {
   type    = string
   default = ""
@@ -17,7 +19,7 @@ variable "secret_key" {
 variable "product" {
   type        = string
   description = "company name"
-  default     = "deel"
+  default     = "xdeel"
 }
 
 variable "service" {

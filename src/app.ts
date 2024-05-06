@@ -20,6 +20,8 @@ const IPSchema: Schema = new Schema({
 const IPModel: Model<IP> = mongoose.model<IP>('IP', IPSchema);
 
 // Connect to MongoDB
+// envirnment variable will be provided through a secured mean (e.g doppler, vault)
+
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/reverse_ips')
   .then(() => console.log('Connected to MongoDB'))
   .catch(err => console.error('Failed to connect to MongoDB', err));
